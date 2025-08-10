@@ -91,9 +91,40 @@ ORDER BY PROFIT DESC
 
 #### ANSWER: THE MOST PROFITABLE CONSUMER CUSTOMER IS EMILY PHAN
 
-10) SELECT CUSTOMER_NAME, CUSTOMER_SEGMENT, SALES, PROFIT, ORDER_QUANTITY FROM [KMS Sql Case Study]
-JOIN SELECT * ORDER_STATUS
+10) *************CUSTOMERS THAT RETURNED ITEMS AND SEGMENT*******************
+SELECT [KMS Sql Case Study].Order_ID, [KMS Sql Case Study].Customer_Name, [KMS Sql Case Study].Customer_Segment , Order_Status.Order_ID, Order_Status.STATUS
 
+FROM [KMS Sql Case Study]
+JOIN Order_Status ON [KMS Sql Case Study].Order_ID= Order_Status.Order_ID
+
+ORDER BY Customer_Segment
+ 
+ #### ANSWER: 872 CUSTOMERS RETURNED ITEMS- 147 CONSUMER CUSTOMERS, 334 CORPORATE CUSTOMERS, 201 HOME OFFICE CUSTOMERS, 190 SMALL BUSINESS CUSTOMERS RETURNED ITEMS.
+
+11) ***************
  
 
 ### RESULTS AND FINDINGS
+1. The product category with the highest sale at KMS for the period under consideration are technology products.
+2. The top 3 regions in terms of sales are Atlantic, Quebec and Prarie.
+3. The last 3 regions in terms of sales are West and Yukon.
+4. The total sales of appliances in Ontario is 3,063,212.47638369
+5. To increase the revenue from bottom 10 customers KMS can run promo that will be tied to customers buying more to benefit good incentive.
+6. DELIVERY TRUCK HAS THE HIGHEST SHIPPING COST.
+7. The 10 most valuable customers are: Emily Phan, Andy Reiter, Deborah Brumfield, Karen Carlisle, Rick Wilson, Raymond Book, Logan Haushalter, Nick Crebassa, John Stevenson and Grant Carroll. The top 8 subscribe to Technology based products.
+8. THE SMALL BUSINESS CUSTOMER WITH HIGHEST SALES IS Dennis Kane.
+9. 69 corporate customers placed most number of orders.
+10. THE MOST PROFITABLE CONSUMER IS EMILY PHAN
+11. 872 CUSTOMERS RETURNED ITEMS- 147 CONSUMER CUSTOMERS, 334 CORPORATE CUSTOMERS, 201 HOME OFFICE CUSTOMERS, 190 SMALL BUSINESS CUSTOMERS RETURNED ITEMS.
+
+### RECOMMENDATION
+- There is a high demand for technology based products. The company should channel more of her production energy to tech based products to meet market demand and maximise profit.
+- A market survey should be done at regions like west and Yukon to understand the customers needs in the region so as to know the products that can best suit them.
+- The top 8 most profitable customers buy technology based items.
+- The company should have a separate and more responsive dest to give priority to the corporate customer as they make most number of orders.
+- The company should take feedbacks from the customers that returned items to know how to improve on their products as 10.1% return rate is much for the company's reputation.
+
+Thank you
+
+
+
